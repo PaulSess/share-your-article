@@ -1,6 +1,6 @@
 .grey{
   margin: 100px 140px 220px 140px;
-  background-color: rgba(125, 128, 122, 0.713);
+  background-color: $grey;
   width: 300px;
   height:300px;
   position: relative;
@@ -28,6 +28,9 @@
 }
 body {
   background-image: image-url('jungle.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .founder-sec{
   margin: 70px 0 200px 0;
@@ -54,4 +57,6 @@ body {
 .founder-txt{
   text-align:center
 }
-
+p{
+  color: $white;
+}
