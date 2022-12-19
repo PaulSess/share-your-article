@@ -34,8 +34,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_19_141705) do
   end
 
   create_table "posts", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
     t.text "content"
-    t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
