@@ -1,6 +1,6 @@
 .grey{
   margin: 100px 140px 220px 140px;
-  background-color: $grey;
+  background-color: $blup;
   width: 300px;
   height:300px;
   position: relative;
@@ -17,7 +17,7 @@
   top: 430px;
   width: 780px;
   text-align:center;
-  margin-left: 34%;
+  margin-left: 28%;
 
 }
 .about-txt1{
@@ -25,12 +25,6 @@
   top: 200px;
   left: 340px;
   width: 600px;
-}
-body {
-  background-image: image-url('jungle.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .founder-sec{
   margin: 70px 0 200px 0;
@@ -41,14 +35,20 @@ body {
 }
 .founders{
   display: flex;
-  justify-content: space-between;
 }
 .founder{
+  margin-top: 50px;
   width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 20px;
+}
+.founder:first-child{
+  margin-left: 30%;
+}
+.founder:nth-child(2){
+  margin-left: 13%;
 }
 .founder-img{
   border-radius: 50%;
@@ -58,5 +58,5 @@ body {
   text-align:center
 }
 p{
-  color: $white;
+  color: $grey;
 }
