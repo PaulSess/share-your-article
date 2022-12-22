@@ -4,12 +4,27 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.input :content %>
+    <%= f.input :name, :input_html => { class: 'f-input'}, placeholder: 'Give that bad boy a name' %>
+    <%= f.input :description, :input_html => { class: 'f-input'}, placeholder: 'Past your command in here..'%>
+    <div class="contentinput">
+      <%# <%= f.input :content %>
+      <%= f.input :content, as: :text, autofocus: true, :input_html => {:style => 'width: 100%', :rows => 10, class: 'f-input'}, placeholder: 'Go nuts!' %>
+    </div>
   </div>
 
-  <div class="form-actions">
+  <button class="form-actions">
     <%= f.button :submit %>
-  </div>
+  </button>
 <% end %>
+
+<style>
+  .f-input{
+    white-space: pre-wrap; #doesn't work.. want to stop printing posts out without line breaks
+  }
+.form-actions{
+  float: right;
+  margin-right: 5%;
+  background-color: $grey;
+  color: $white;
+}
+</style>

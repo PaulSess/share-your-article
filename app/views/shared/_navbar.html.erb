@@ -1,7 +1,16 @@
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-dark">
   <div class="container-fluid">
-   <%= image_tag("catlogo.png", {:style => "width:50px;"}) %>
-    <a class="navbar-brand" href="#">AI and friends</a>
+    <%= link_to root_path do %>
+      <%= image_tag("catlogo.png", {:style => "width:50px;"}) %>
+    <% end %>
+    <%= link_to root_path do %>
+      <a class="navbar-brand" href="#">AI and friends</a>
+    <% end %>
+    <%= link_to new_post_path do %>
+      <button class="createbtn">
+        Create Post
+      </button>
+    <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

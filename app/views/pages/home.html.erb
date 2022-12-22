@@ -1,2 +1,12 @@
-<h1>Welcome home</h1>
+<h1>Welcome home friend</h1>
 
+<section class="post-list">
+  <% @posts.each do |post| %>
+    <div class="single-post">
+      <%= image_tag("profile-picture.webp", class: "profile-img")  %>
+      <strong><%= post.name %></strong><br>
+      <p>- <%= post.description %></p>
+      <%= post.content %><br>
+    </div>
+  <% end %>
+</section>

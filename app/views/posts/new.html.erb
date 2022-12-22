@@ -1,9 +1,27 @@
-<h1>New post</h1>
 
-<%= render "form", post: @post %>
+  <%= link_to posts_path do %>
+    <i class="fa-solid fa-angles-left"></i>
+  <% end %>
+
+<i class="fa-solid fa-feather feather"></i>
+
+<div class="new-post-form">
+  <h1>Share your outcome</h1>
+  <%= render "form", post: @post %>
+</div>
 
 <br>
 
-<div>
-  <%= link_to "Back to posts", posts_path %>
-</div>
+
+<style>
+.new-post-form{
+  width: 50%;
+  margin: auto;
+}
+.feather{
+  font-size: 100px;
+  float: right;
+  margin-top: 10%;
+  margin-right: 7%;
+}
+</style>
