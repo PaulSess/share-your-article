@@ -5,6 +5,9 @@ class PagesController < ApplicationController
     @posts = Post.all.order('created_at DESC')
   end
 
+  def profile
+  end
+
   def about
   end
 end
