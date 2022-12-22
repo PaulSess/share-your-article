@@ -2,3 +2,17 @@ h1 {
   width: fit-content;
   margin: 20px auto;
 }
+.single-post{
+  width: 45%;
+  margin: 30px auto;
+  background-color: $butterplight;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+.profile-img{
+  border-radius: 50%;
+  width: 30px;
+  position: absolute;
+  left: 94%;
+}
