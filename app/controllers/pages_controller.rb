@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def profile
+    @posts = Post.all.order('created_at DESC').where(user_id: current_user)
   end
 
   def about
