@@ -3,9 +3,8 @@
     <%= link_to root_path do %>
       <%= image_tag("catlogo.png", {:style => "width:50px;"}) %>
     <% end %>
-    <%= link_to root_path do %>
-      <a class="navbar-brand" href="#">AI and friends</a>
-    <% end %>
+    <%= link_to "AI and friends", root_path, class: "navbar-brand" %>
+    <%# # <a href="#" class="navbar-brand">AI and friends</a> %>
     <%= link_to new_post_path do %>
       <button class="createbtn">
         Create Post
