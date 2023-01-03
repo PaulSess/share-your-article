@@ -2,11 +2,15 @@
   <%= image_tag("profile-picture.webp", class: "profpage-img") %>
   <p class="user-email"><%= current_user.email %></p>
 </div>
+<div class="ownposts">
+  <% @posts.each do |post| %>
+    <div>
+      <strong><%= post.name %></strong><br>
+      <%= post.description %>
+    </div>
+  <% end %>
 
-
-
-
-
+</div>
 
 <style>
   .profpage-img{
@@ -21,5 +25,10 @@
   .user-email{
     width: fit-content;
     margin-left: 6%;
+  }
+  .ownposts{
+    width: 50%;
+    float: right;
+    border: solid black 1px;
   }
 </style>

@@ -27,8 +27,12 @@
 
   <section class="founder-sec">
     <h3 class="founder-header">Project founders</h3>
-      <div class="founder">
+      <div class="founder parent">
         <%= image_tag("me.jpeg", class: "founder-img", height: '140', width: '140') %>
+        <%= image_tag("speech_10.svg", class: "speech-bubble", style:"display:none", height: '100', width: '100') %>
+        <p class="speech-bubble-txt" style="display:none">Hi!</p>
+        <span class="anger" style="display:none">💢</span>
+        <%= image_tag("pngwing.com.png", class: "animeface", style:"display:none", width: '40px'  ) %>
         <p><strong>Paul Sessbruegger</strong></p>
         <p class="founder-txt">Commited programmer with a passion for tech and a heart for AI.</p>
       </div>
