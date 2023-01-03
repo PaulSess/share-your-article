@@ -51,6 +51,34 @@
 .founder-img{
   border-radius: 50%;
   margin: 10px auto;
+  position: relative;
+}
+.parent{
+  position: relative;
+}
+.speech-bubble{
+  position: absolute;
+  left: 200px;
+  top: -20px;
+}
+.speech-bubble-txt{
+  position: absolute;
+  left: 230px;
+  top: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+.anger{
+  position: absolute;
+  top: 61px;
+  right: 88px;
+}
+.animeface{
+  position: absolute;
+  color: rgb(188, 187, 187);
+  top: 70px;
+  right: 97px;
 }
 .founder-txt{
   text-align:center
