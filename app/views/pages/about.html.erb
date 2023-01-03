@@ -3,24 +3,34 @@
   <section class="about-sec">
     <div class="grey">
     </div>
-    <p class="about-txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus temporibus eos, modi in quo, atque est corporis nihil fugiat sequi, illum officiis? Blanditiis voluptas libero iste, doloremque pariatur dolor.</p>
+    <p class="about-txt1">AI has the potential to improve many aspects of society and industry by automating tasks, improving decision-making, and increasing efficiency. It can be used in a variety of fields, including business, healthcare, transportation, and scientific research, to solve problems and create new opportunities.</p>
+      <div data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
         <%= image_tag('openaiperson.avif', class:"openai-img") %>
-    <p class="about-txt2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum, quae voluptas error iure eveniet eligendi aliquid vel pariatur tenetur! Distinctio earum porro maxime ex dolores doloremque obcaecati praesentium expedita?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus eius impedit commodi aliquid deserunt veritatis, expedita consequuntur numquam incidunt quos nam odio, rerum neque explicabo saepe. Voluptatibus, eum nostrum?</p>
+      </div>
+    <p class="about-txt2">GitHub Copilot is a tool that can help developers use GitHub more efficiently by providing them with additional features and functionality. For example, it might offer features such as: Code completion: automatically suggesting code snippets or completing lines of code as a developer is typing Syntax highlighting: formatting code in a way that makes it easier to read and understand Error checking: identifying and highlighting errors in code as a developer is writing it Collaboration tools: allowing developers to work on code together in real-time, or to leave comments and feedback on each other's work Overall, GitHub Copilot can help developers write better code more quickly and effectively, and can make it easier for them to collaborate with their team.</p>
   </section>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Who is Open AI?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="OpenaiImgText">OpenAI is a research laboratory based in San Francisco, California that conducts research in artificial intelligence (AI) and its applications. The company was founded in 2015 by a group of prominent technology executives and researchers, including Elon Musk and Sam Altman, with the goal of promoting and advancing the development of friendly AI in a way that benefits humanity.<br><br> OpenAI conducts research in a wide range of areas related to AI, including machine learning, robotics, economics, and computer science. It has released a number of widely-used AI tools and platforms, including the GPT (Generative Pre-training Transformer) language model, the DALL-E image generation system, and the OpenAI Gym platform for reinforcement learning.<br><br> In addition to its research activities, OpenAI also engages in public education and policy work related to AI. It hosts events, workshops, and conferences to bring together researchers and other experts to discuss the latest developments in the field, and works to educate the public about the potential risks and benefits of AI.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <section class="founder-sec">
     <h3 class="founder-header">Project founders</h3>
-    <div class="founders">
       <div class="founder">
         <%= image_tag("me.jpeg", class: "founder-img", height: '140', width: '140') %>
         <p><strong>Paul Sessbruegger</strong></p>
         <p class="founder-txt">Commited programmer with a passion for tech and a heart for AI.</p>
       </div>
-      <div class="founder">
-        <%= image_tag("me.jpeg", class: "founder-img", height: '140', width: '140') %>
-        <p><strong>Paul Sessbruegger</strong></p>
-        <p class="founder-txt">Commited programmer with a passion for tech and a heart for AI.</p>
-      </div>
-    </div>
   </section>
 </div>
