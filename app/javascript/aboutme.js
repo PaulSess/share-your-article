@@ -27,3 +27,21 @@ function mouseOut(evt) {
 }
 paulimg.addEventListener('mouseover', mouseOver);
 paulimg.addEventListener('mouseout', mouseOut);
+
+const foundertxt = document.querySelector('.founder-txt')
+function change(elem){
+    if (elem.innerText=="Commited programmer with a passion for tech and a heart for AI.") elem.innerText = "Loving father of some little code and AI generated short stories.";
+    else elem.innerText = "Commited programmer with a passion for tech and a heart for AI.";
+}
+paulimg.addEventListener('click', (evt) => {
+  change(foundertxt)
+})
+function change2(elem){
+  if (elem.innerText=="Commited programmer with a passion for tech and a heart for AI.") elem.innerText = "Also world wide known for his legendary quote 'Ich bin ein Berliner'.";
+  else if (elem.innerText=="Loving father of some little code and AI generated short stories.") elem.innerText = "If I fiddle around too much with Javascript? Probably..";
+  else if (elem.innerText=="Also world wide known for his legendary quote 'Ich bin ein Berliner'.") elem.innerText = "If I fiddle around too much with Javascript? Probably..";
+  else if (elem.innerText=="If I fiddle around too much with Javascript? Probably..") elem.innerText = "Commited programmer with a passion for tech and a heart for AI.";
+}
+foundertxt.addEventListener('click', (evt) => {
+  change2(foundertxt)
+})
